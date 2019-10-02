@@ -162,10 +162,6 @@ def best_and_worst_hour(percentages):
     return bestAndWorst
 
 def main(path_to_shifts, path_to_sales):
-    """
-    Do not touch this function, but you can look at it, to have an idea of
-    how your data should interact with each other
-    """
     shifts_processed = process_shifts(path_to_shifts)
     sales_processed = process_sales(path_to_sales)
     percentages = compute_percentage(shifts_processed, sales_processed)
